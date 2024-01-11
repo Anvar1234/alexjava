@@ -29,8 +29,8 @@ import java.util.List;
  */
 public class SumOfElements {
     static String[][] arr = new String[][]{
-            {"1", "1.5", "1.5"},
-            {"1", "1.5", "1.5"},
+            {"s", "1.5", "1.5"},
+            {"1", "s", "1.5"},
             {"1", "1.5", "1.5"}
     };
 

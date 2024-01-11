@@ -29,18 +29,15 @@ import java.util.List;
 public class NewSumOfElements {
     static String[][] arr = new String[][]{
             {"1", "s", "1.5"},
-            {"s", "1.5", "1.5"},
-            {"1", "1.5", "s"}
+            {"1", "s", "1.5"},
+            {"1", "1.5", "1.5"}
     };
 
     public static void main(String[] args) {
         try {
             System.out.println("Сумма элементов массива = " + sum2d(arr));
-        } catch (NewMyArraySizeException e) {    //multi-catch
-            System.err.println(e.getMessage());
-        } catch (NewMyArrayDataException e){
-            System.err.println(e.getMessage());
-
+        } catch (NewMyArraySizeException | NewMyArrayDataException e) {    //multi-catch
+            e.printMessage();
         }
     }
 
